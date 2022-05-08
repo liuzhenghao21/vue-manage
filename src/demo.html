@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function aaa (){
+        return {
+      code: 20000,
+      data: {
+        // 折线图
+        orderData: {
+          date: ['20191001', '20191002', '20191003', '20191004', '20191005', '20191006', '20191007'],
+          data: [
+            {苹果:123},
+            {vivo:456},
+            {oppo:786},
+            {魅族:4564},
+            {三星:786},
+            {小米:786}
+          ]
+        },
+      }
+    }
+}
+    let obj1=aaa()
+    let data1=obj1.data.orderData.data[0]
+       console.log(data1['苹果']) 
+    </script>
+</body>
+</html>
